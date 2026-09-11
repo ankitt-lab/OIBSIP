@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter | Ankit Yadav</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="converter-card">
+
+            <!-- Heading -->
+            <div class="heading">
+                <p class="subtitle">OIBSIP Web Development</p>
+                <h1>Temperature Converter</h1>
+                <p class="description">
+                    Convert temperatures between Celsius, Fahrenheit and Kelvin.
+                </p>
+            </div>
+
+
+            <!-- Input Section -->
+            <div class="input-section">
+
+                <label for="temperature">
+                    Enter Temperature
+                </label>
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter temperature"
+                    step="any"
+                >
+
+                <label for="unit">
+                    Select Input Unit
+                </label>
+
+                <select id="unit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+
+                <button id="convertBtn">
+                    Convert Temperature
+                </button>
+
+            </div>
+
+
+            <!-- Error Message -->
+            <div id="errorMessage" class="error-message"></div>
+
+
+            <!-- Results -->
+            <div id="resultSection" class="result-section">
+
+                <h2>Conversion Results</h2>
+
+                <div class="results-grid">
+
+                    <div class="result-card">
+                        <span class="result-symbol">°C</span>
+                        <h3>Celsius</h3>
+                        <p id="celsiusResult">--</p>
+                    </div>
+
+                    <div class="result-card">
+                        <span class="result-symbol">°F</span>
+                        <h3>Fahrenheit</h3>
+                        <p id="fahrenheitResult">--</p>
+                    </div>
+
+                    <div class="result-card">
+                        <span class="result-symbol">K</span>
+                        <h3>Kelvin</h3>
+                        <p id="kelvinResult">--</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Formula Information -->
+            <div class="formula-section">
+
+                <h3>Conversion Formulas</h3>
+
+                <p>
+                    °F = (°C × 9/5) + 32
+                </p>
+
+                <p>
+                    °C = (°F − 32) × 5/9
+                </p>
+
+                <p>
+                    K = °C + 273.15
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
